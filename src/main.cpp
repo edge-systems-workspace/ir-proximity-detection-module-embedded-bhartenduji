@@ -28,3 +28,31 @@ void setup() {
   pinMode(irPin, INPUT);
   pinMode(ledPin, OUTPUT);
 }
+
+/**
+ * @brief Continuously checks for object detection.
+ *
+ * If IR sensor detects an object (LOW signal):
+ *  - LED turns ON
+ *  - Prints "Object Detected"
+ *
+ * If no object is detected:
+ *  - LED turns OFF
+ *  - Prints "No Object"
+ */
+void loop() {
+
+  int state = digitalRead(irPin);
+
+  if (state == LOW) {   // Object detected
+    digitalWrite(ledPin, HIGH);
+    Serial.println("Object Detected");
+  } else {              // No object
+    digitalWrite(ledPin, LOW);
+    Serial.println("No Object");
+  }
+
+  delay(200);
+}
+
+
