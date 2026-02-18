@@ -1,44 +1,12 @@
-#include <Arduino.h>
 /**
- * @file main.cpp
- * @brief Embedded Obstacle Detection System using IR Sensor
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @file IR_Sensor_LED_Control.ino
+ * @brief IR obstacle sensor based LED control with Serial monitoring.
  *
- * @details
- * Reads digital input from IR sensor
- * and detects obstacle presence.
+ * This program reads the digital output from an IR obstacle sensor.
+ * When an object is detected (LOW signal), the LED turns ON
+ * and a message is printed to the Serial Monitor.
+ * When no object is detected, the LED turns OFF.
+ *
+ * @author Bhartendu Ji
+ * @date 18 Feb 2026
  */
-
- // TODO 1:
- // Define IR sensor digital pin (Use pin 2)
-
- // TODO 2:
- // Create variable to store sensor state
-
-void setup() {
-
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Configure IR pin as INPUT
-
-    // TODO 5:
-    // Print system initialization message
-}
-
-void loop() {
-
-    // TODO 6:
-    // Read digital value from IR sensor
-
-    // TODO 7:
-    // If obstacle detected
-    //     Print "Obstacle Detected"
-    // Else
-    //     Print "No Obstacle"
-
-    // TODO 8:
-    // Add small delay (200–500ms)
-}
