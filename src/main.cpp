@@ -23,3 +23,8 @@ int ledPin = 13;   ///< LED connected to digital pin 13
  * - Sets LED pin as OUTPUT
  * - Starts Serial communication at 9600 baud rate
  */
+void setup() {
+  Serial.begin(9600);
+  pinMode(irPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+}
