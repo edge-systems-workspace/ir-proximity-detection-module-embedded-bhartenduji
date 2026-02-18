@@ -14,3 +14,12 @@
 // Pin Definitions
 int irPin = 7;     ///< IR sensor OUT pin connected to digital pin 7
 int ledPin = 13;   ///< LED connected to digital pin 13
+
+/**
+ * @brief Initializes serial communication and pin configuration.
+ *
+ * This function runs once when the Arduino starts.
+ * - Sets IR sensor pin as INPUT
+ * - Sets LED pin as OUTPUT
+ * - Starts Serial communication at 9600 baud rate
+ */
